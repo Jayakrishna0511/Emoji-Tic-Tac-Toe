@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,4 +11,44 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations for the game */
+@keyframes zoom-in-50 {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-in {
+  animation-fill-mode: both;
+}
+
+.zoom-in-50 {
+  animation-name: zoom-in-50;
+}
+
+.animate-out {
+  animation-fill-mode: both;
+}
+
+.fade-out {
+  animation-name: fade-out;
 }
