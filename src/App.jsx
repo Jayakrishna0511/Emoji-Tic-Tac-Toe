@@ -115,7 +115,6 @@ function App() {
   };
 
 
-
 // if (!gameStarted) {
 //   return (
 //     <div
@@ -206,9 +205,6 @@ function App() {
 //     </div>
 //   );
 // }
-
-
-
 
 
 
